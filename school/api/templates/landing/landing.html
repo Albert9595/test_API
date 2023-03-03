@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+    html {
+background-color:#214c84;
+background-repeat:no-repeat;
+background-size:cover;
+height:100%;
+}
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: green;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+{%for sort_students_url, name in data.students.items%}
+        <p><a href="students_sort/{{sort_students_url}}" target="_blank">Один из отчетов по студенту {{name}} </a><p></p>
+{%endfor%}
+
+{%for sort_groups_url, groups in data.groups.items%}
+    <p><a href="group_sort/{{sort_groups_url}}/" target="_blank">Один из отчетов по группе {{groups}}</a><p></p>
+{%endfor%}
+
+<a href="docs/" target="_blank">Свагер</a> 
+
+
+</body>
+</html>
+    
+    
+        
