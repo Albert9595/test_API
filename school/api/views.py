@@ -66,7 +66,6 @@ def student_sort(requests, students_id: int) -> dict:
                 'avg_score': None,
                 'group': str(score_info.groups_id),   
             }
-            print(data)
 
     for subject_name, avg_ifo in number_dict.items():
         avg = avg_ifo['avg'] / avg_ifo['count']
